@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.simple {
+  text-align: center;
+  padding: 1rem;
+}
+main {
+  text-align: center;
+}
+
+#todo--input {
+  padding: 0.5rem 13rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+}
+
+#add--btn {
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+#add--btn:active {
+  background-color: yellowgreen;
+}
+
+ul {
+  padding: 2rem;
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+li::after {
+  content: " ";
+  display: block;
+  width: 40rem;
+  height: 1px;
+  background-color: grey;
+  border-radius: 10px;
+  align-items: center;
+  margin: auto;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+.delete--btn {
+  border: none;
+  border-radius: 1rem;
+  background-color: yellow;
+  padding: 0.2rem 1.4rem;
+  cursor: pointer;
+  margin-left: 200px;
+}
+.delete--btn:active {
+  background-color: yellowgreen;
+}
+
+.todo--div {
+  border: 1px solid grey;
+  margin: auto;
+  width: 700px;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+.created {
+  margin-bottom: 1rem;
+}
