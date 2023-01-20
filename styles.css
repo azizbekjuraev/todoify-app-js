@@ -11,11 +11,28 @@
 main {
   text-align: center;
 }
+header {
+  background-color: yellow;
+  margin-bottom: 2rem;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+footer {
+  background-color: black;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
 
 #todo--input {
   padding: 0.5rem 13rem;
   border-radius: 1rem;
-  border: 1px solid grey;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 #add--btn {
@@ -24,6 +41,7 @@ main {
   background-color: yellow;
   border: none;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 #add--btn:active {
@@ -39,9 +57,8 @@ ul {
 li::after {
   content: " ";
   display: block;
-  width: 40rem;
   height: 1px;
-  background-color: grey;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   border-radius: 10px;
   align-items: center;
   margin: auto;
@@ -57,20 +74,39 @@ li {
   background-color: yellow;
   padding: 0.2rem 1.4rem;
   cursor: pointer;
-  margin-left: 200px;
+  margin-left: 55px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .delete--btn:active {
   background-color: yellowgreen;
 }
 
 .todo--div {
-  border: 1px solid grey;
   margin: auto;
   width: 700px;
   margin-top: 1rem;
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
   border-radius: 2rem;
 }
 
 .created {
   margin-bottom: 1rem;
+}
+
+.footer--icons img {
+  width: 2.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.azizbek {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.li--text {
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border-radius: 1rem;
 }
