@@ -31,7 +31,7 @@ addBtn.addEventListener("click", () => {
   }
 
   ul.innerHTML += `<li class="li--text"> <h5 class="created">Created on: ${day} ${today} </h5>
-  ${count++}.${
+  ${count++}. ${
     inputEl.value
   } <button class="delete--btn" >DELETE</button> </li>`;
   inputEl.value = "";
