@@ -62,6 +62,7 @@ li::after {
   border-radius: 10px;
   align-items: center;
   margin: auto;
+  margin-top: 0.1rem;
 }
 
 li {
@@ -109,4 +110,13 @@ li {
   margin-top: 1rem;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   border-radius: 1rem;
+}
+.delete--all {
+  background-color: yellow;
+  border: none;
+  padding: 0.5rem 17.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+  display: none;
 }
