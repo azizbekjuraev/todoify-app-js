@@ -4,15 +4,12 @@ const inputEl = document.getElementById("todo--input");
 const addBtn = document.getElementById("add--btn");
 const deleteAll = document.querySelector(".delete--all");
 const ul = document.querySelector(".todo--ul");
+const allRights = document.querySelector(".all--rights");
 
 let count = 1;
 let todo = [];
 
 //create date
-const weekday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-let d = new Date();
-let wDay = weekday[d.getDay()];
-
 const now = new Date();
 const options = {
   hour: `numeric`,
@@ -22,6 +19,9 @@ const options = {
   year: `numeric`,
   //weekday: `long`,
 };
+
+const weekday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+let wDay = weekday[now.getDay()];
 
 const today = new Intl.DateTimeFormat(options).format(now);
 const parsed = JSON.parse(localStorage.getItem("todos"));
@@ -66,3 +66,5 @@ ${count++}. ${
     }
   });
 });
+
+allRights.innerHTML = `©️ 2023 - all rights reserved`;

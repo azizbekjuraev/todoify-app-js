@@ -38,14 +38,16 @@ footer {
 #add--btn {
   padding: 0.5rem 3rem;
   border-radius: 1rem;
-  background-color: yellow;
+  background-color: black;
+  color: #fff;
   border: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
-#add--btn:active {
-  background-color: yellowgreen;
+#add--btn:hover {
+  background-color: yellow;
+  color: black;
 }
 
 ul {
@@ -72,14 +74,16 @@ li {
 .delete--btn {
   border: none;
   border-radius: 1rem;
-  background-color: yellow;
+  background-color: black;
+  color: #fff;
   padding: 0.2rem 1.4rem;
   cursor: pointer;
   margin-left: 55px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
-.delete--btn:active {
-  background-color: yellowgreen;
+
+.delete--btn:hover {
+  background-color: red;
 }
 
 .todo--div {
@@ -95,7 +99,7 @@ li {
 }
 
 .footer--icons img {
-  width: 2.5rem;
+  width: 2rem;
   margin-left: 1rem;
   cursor: pointer;
 }
@@ -112,11 +116,16 @@ li {
   border-radius: 1rem;
 }
 .delete--all {
-  background-color: yellow;
+  background-color: black;
+  color: #fff;
   border: none;
   padding: 0.5rem 17.5rem;
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
   display: none;
+}
+
+.delete--all:hover {
+  background-color: red;
 }
