@@ -35,6 +35,10 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
+::placeholder {
+  color: gray;
+}
+
 #add--btn {
   padding: 0.5rem 3rem;
   border-radius: 1rem;
@@ -78,12 +82,28 @@ li {
   color: #fff;
   padding: 0.2rem 1.4rem;
   cursor: pointer;
-  margin-left: 55px;
+  margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .delete--btn:hover {
   background-color: red;
+}
+
+.edit--btn {
+  border: none;
+  border-radius: 1rem;
+  background-color: black;
+  color: #fff;
+  padding: 0.2rem 1.4rem;
+  cursor: pointer;
+  margin-left: 55px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.edit--btn:hover {
+  background-color: yellow;
+  color: black;
 }
 
 .todo--div {
@@ -96,6 +116,7 @@ li {
 
 .created {
   margin-bottom: 1rem;
+  color: gray;
 }
 
 .footer--icons img {

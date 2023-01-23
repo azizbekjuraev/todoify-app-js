@@ -21,27 +21,25 @@ const options = {
 };
 
 const weekday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+const today = new Intl.DateTimeFormat(options).format(now);
 let wDay = weekday[now.getDay()];
 
-const today = new Intl.DateTimeFormat(options).format(now);
 const parsed = JSON.parse(localStorage.getItem("todos"));
 // console.log(parsed);
 
-addBtn.addEventListener("click", () => {
-  if (!inputEl.value) {
-    return;
-  }
-
+//Create button
+function createTodo() {
   todo =
     ul.innerHTML += `<li class="li--text"> <h5 class="created">Created on: ${wDay} ${today} </h5>
 ${count++}. ${
       inputEl.value
-    } <button class="delete--btn" >DELETE</button> </li>`;
+    }<button class="edit--btn">EDIT</button>  <button class="delete--btn" >DELETE</button> </li>`;
   inputEl.value = "";
-
   localStorage.setItem("todos", JSON.stringify(todo));
+}
 
-  // delete todo
+//Delete todo
+function deleteTodo() {
   const deleteBtn = document.querySelectorAll(".delete--btn");
   for (let i = 0; i < deleteBtn.length; i++) {
     deleteBtn[i].onclick = function () {
@@ -55,8 +53,10 @@ ${count++}. ${
       //   }, "2000");
     };
   }
+}
 
-  //delete all todos
+// deleteAllTodo
+function deleteAllTodo() {
   deleteAll.style.display = "inline-block";
   deleteAll.addEventListener("click", () => {
     ul.innerHTML = "";
@@ -65,6 +65,23 @@ ${count++}. ${
       deleteAll.style.display = "none";
     }
   });
+}
+
+//Add button
+addBtn.addEventListener("click", () => {
+  if (!inputEl.value) {
+    return;
+  }
+  createTodo();
+  deleteTodo();
+  deleteAllTodo();
+
+  //edit button;
+  const editBtn = document.querySelectorAll(".edit--btn");
+  for (let i = 0; i < editBtn.length; i++) {
+    editBtn[i].onclick = function () {};
+  }
 });
 
-allRights.innerHTML = `©️ 2023 - all rights reserved`;
+//Footer
+allRights.innerHTML = `©️ ${now.getFullYear()} - all rights reserved`;
